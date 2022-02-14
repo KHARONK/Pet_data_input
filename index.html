@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pet Form</title>
+        <script type = "module" src ="pet.js"></script>
+        <script type = "module" src ="main.js" defer></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form name = "petDetails" class="form" >
+            <div class="boxStyle-container">
+                <label for = "name">Name:</label><br>
+                <input type = "text" name = "name" placeholder="Pet's name" class = "boxStyle"><br>
+            </div>
+
+            <div class="select">
+            <label for = "name">Choose pet type:</label> <br>
+            <select name="type" class = "select-input">
+                <option default value="cat">cat</option>
+                <option value="dog">dog</option>
+                <option value="other">other</option>
+            </select>
+            </div>
+
+            <div class="boxStyle-container">
+                <label for = "birthday">Birthday:</label><br>
+                <input type="date"  name = "birthday" placeholder="MM-DD-YYYY" class = "boxStyle"><br>
+            </div>
+ 
+            <div class="boxStyle-container">
+                <label for = "type">Activities</label><br>
+                <textarea name ="activities" rows = "10" cols = "30" placeholder="list pet activities" class = "boxStyle"></textarea><br>
+            </div>
+
+            <div class="boxStyle-container">
+                <input class="submitBtn" type = "submit" name = "submit" class = "submitStyle"><br>
+            </div>                  
+        </form>
+    </body>
+</html>
